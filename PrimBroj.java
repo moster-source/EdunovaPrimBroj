@@ -9,8 +9,9 @@ public class PrimBroj {
 
 		//int kojiBroj = 50000;
 		int kojiBroj = Integer.parseInt(JOptionPane.showInputDialog("Unesite maksimalni broj traženja prim broja."));
+		int kojiBroj2 = Integer.parseInt(JOptionPane.showInputDialog("Unesite minimalni broj traženja prim broja."));
 		
-		for(int i = 2; i <= kojiBroj; i++) {
+		for(int i = kojiBroj2; i <= kojiBroj; i++) {
 			if(ProvjeriBroj(i)) {
 				System.out.println("Broj " + i + " je prim broj.");
 				
